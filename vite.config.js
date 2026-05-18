@@ -23,8 +23,8 @@ export default defineConfig({
         scope: '/React-to-do/',
         display: 'standalone',
         icons: [
-          { src: '/React-to-do/icon-192.png', sizes: '192x192', type: 'image/png' },
-          { src: '/React-to-do/icon-512.png', sizes: '512x512', type: 'image/png' }
+          { src: 'logo192.png', sizes: '192x192', type: 'image/png' },
+          { src: 'logo512.png', sizes: '512x512', type: 'image/png' }
         ]
       }
     })
