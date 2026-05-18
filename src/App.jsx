@@ -166,7 +166,6 @@ function App() {
     let tasksCopy = [...tasks]
     tasksCopy.splice(i,1)
     setTasks(tasksCopy)
-    inputRef.current.focus()
    }
    
 let edit = (i) => { 
