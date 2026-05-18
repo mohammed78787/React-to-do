@@ -134,6 +134,7 @@ button {
   }
   h1{
     font-family: cursive;
+    margin-bottom: 7px;
   }
   .todo {
     padding: 15px;
