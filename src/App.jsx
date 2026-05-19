@@ -142,7 +142,7 @@ function App() {
 
     }
     else {
-          let newItem = {completed:false,text}
+          let newItem = {completed:false,text,id:Date.now()}
           setTasks([...tasks,newItem])
           inputRef.current.focus()
     }
@@ -211,11 +211,11 @@ let handleDrop = (i) => {
     >
       <h1 > To Do List</h1>
       <ul> 
-        {tasks.map(({text,completed},index)=> {  // order of properties is not important in object destructurng
+        {tasks.map(({text,completed,id},index)=> {  // order of properties is not important in object destructurng
         //it depends on properties names not their order
           return (
           <div className='task-container'
-           key={index}
+           key={id}
          
           draggable
           onDragStart={() => handleDragStart(index)}
